@@ -8,9 +8,16 @@ function addTask(){
     let name=document.getElementById("task-name").value;
     let priority=document.getElementById("priority-i").value;
 
-    tasks.push({"name":name , "priority":priority});
+    if(name!=""){
 
-    tableRender();
+        tasks.push({"name":name , "priority":priority});
+        
+        tableRender();
+    }
+    else{
+        alert("Task name can't be empty");
+    }
+
 }
 
 function deleteTask(i){
