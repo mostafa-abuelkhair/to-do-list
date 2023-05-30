@@ -1,0 +1,76 @@
+header{
+    text-align: center;
+}
+
+body{
+    background-color:cornflowerblue;
+    padding: 30px;
+}
+
+.inputs{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.inputs input, .inputs select{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    height: 100%;
+    box-sizing: content-box;
+
+}
+
+.inputs button{
+    width: 70px;
+    height: 100%;
+    box-sizing:content-box;
+    background-color:green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.tasks-table{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse; 
+
+}
+
+.tasks-table thead tr{
+    border-bottom: solid;
+}
+.tasks-table tbody tr{
+    border-bottom: solid;
+    border-color:antiquewhite;
+}
+
+.tasks-table th, .tasks-table td{
+    text-align: center;
+    padding: 10px;
+}
+
+.tasks-table button{
+    box-sizing:content-box;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tasks-table .edit{
+    background-color: green;
+}
+.tasks-table .delete{
+    background-color: red;
+}
+
+
+
+
+
