@@ -19,7 +19,7 @@
 
         <section class="inputs">
 
-            <input type="text" placeholder="task name">
+            <input id="task-name" type="text" placeholder="task name">
 
             <select name="priority" id="priority-i">
             <option value="Low">Low</option>
@@ -27,7 +27,7 @@
             <option value="High">High</option>
             </select>
 
-            <button>Add</button>
+            <button onclick="addTask()">Add</button>
 
         </section>
 
@@ -37,21 +37,13 @@
                 <tr>
                     <th>#</th>
                     <th>Task Name</th>
-                    <th>priority</th>
+                    <th>Priority</th>
                     <th>Action</th>
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td>#</td>
-                    <td>Task Name</td>
-                    <td>priority</td>
-                    <td>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td> 
-                </tr>
+            <tbody id="tasks">
+
             </tbody>
         </table>
         
