@@ -31,6 +31,17 @@
 
         </section>
 
+ 
+        <section class="filter">
+            <label for="filter">sort by :</label>
+
+            <select name="priority" id="filter" onchange="filter()">
+                <option value="0">none</option>
+                <option value="1">Priority Low</option>
+                <option value="2">Priority High</option>
+            </select>
+
+        </section>
 
         <table class="tasks-table">
             <thead>

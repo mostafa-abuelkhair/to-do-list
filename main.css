@@ -70,7 +70,15 @@ body{
     background-color: red;
 }
 
+.filter{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; ;
+}
 
+.d-none{
+    display: none;
+}
 
 
 
