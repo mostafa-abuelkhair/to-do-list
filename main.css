@@ -2,9 +2,23 @@ header{
     text-align: center;
 }
 
+header h1{
+    font-size: 2.7rem;
+    margin: 30px;
+    margin-bottom: 50px;
+    word-spacing: 15px;
+    color: white;
+}
+
+
 body{
     background-color:cornflowerblue;
     padding: 30px;
+    background-image: url('bg.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .inputs{
@@ -18,26 +32,57 @@ body{
 .inputs input, .inputs select{
     width: 30%;
     margin: 0;
-    padding: 0;
+    padding: 3px;
     margin-right: 20px;
     height: 100%;
     box-sizing: content-box;
+    color: white;
+    font-size: 1.2rem;
+}
 
+.inputs input{
+    text-align: center;
+    background-color: rgb(96, 96, 178);
+    border: none;
+    color: white;
+}
+
+.tasks-table input{
+    text-align: center;
+    background-color: transparent;
+    border: solid rgb(96, 96, 178);
+    width: 100%;
+    color: white;
+}
+
+select, .inputs select{
+    text-align: center;
+    margin-left: 10px;
+    background-color: #cf5f53;
+    border: none;
+    color: white;
+}
+
+.inputs input::placeholder{
+    color: rgba(255, 255, 255, 0.629);
 }
 
 .inputs button{
-    width: 70px;
-    height: 100%;
+
     box-sizing:content-box;
-    background-color:green;
-    color: white;
-    border: none;
+    color: rgb(240, 211, 219);
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 45px;
+}
+.inputs button:hover{
+    color: orange;
 }
 
 
 .tasks-table{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     border-collapse: collapse; 
 
@@ -61,24 +106,44 @@ body{
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: solid white;
 }
 
 .tasks-table .edit{
-    background-color: green;
+    border: solid rgb(77, 215, 81);
+    margin: 5px;
 }
 .tasks-table .delete{
-    background-color: red;
+    border: solid red;
 }
 
 .filter{
     display: flex;
     justify-content: center;
-    margin-top: 50px; ;
+    margin-top: 80px; ;
 }
 
 .d-none{
     display: none;
 }
 
+.edit:hover, .delete:hover{
+    color: orange;
+}
 
+thead{
+    background-color: rgba(62, 134, 61, 0.396);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgbA(169, 90, 90,0.6);
+}
+
+tbody tr:nth-child(odd){
+   
+    background-color: rgba(195, 103, 42, 0.6)
+
+}
 

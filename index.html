@@ -4,22 +4,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TO DO List</title>
+        <title>To Do List</title>
         <meta name="description" content="TO DO List">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+        <link rel="stylesheet" href="fontawesome/css/solid.css">
+
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
 
         <header>
 
-            <h1>To Do List  Application</h1>
+            <h1>TO DO</h1>
 
         </header>
 
         <section class="inputs">
 
-            <input id="task-name" type="text" placeholder="task name">
+            <input id="task-name" type="text" placeholder=" Task Name">
 
             <select name="priority" id="priority-i">
             <option value="Low">Low</option>
@@ -27,7 +30,7 @@
             <option value="High">High</option>
             </select>
 
-            <button onclick="addTask()">Add</button>
+            <button onclick="addTask()"><i class="fa-solid fa-circle-plus" ></i></button>
 
         </section>
 
@@ -56,6 +59,7 @@
             <tbody id="tasks">
 
             </tbody>
+
         </table>
         
         <script src="main.js" async defer></script>
