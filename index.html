@@ -30,7 +30,7 @@
             <option value="High">High</option>
             </select>
 
-            <button onclick="addTask()"><i class="fa-solid fa-circle-plus" ></i></button>
+            <button onclick="tList.addTask()"><i class="fa-solid fa-circle-plus" ></i></button>
 
         </section>
 
@@ -38,7 +38,7 @@
         <section class="filter">
             <label for="filter">Sort by :</label>
 
-            <select name="priority" id="filter" onchange="filter()">
+            <select name="priority" id="filter" onchange="tList.filter()">
                 <option value="0">none</option>
                 <option value="1">Priority Low</option>
                 <option value="2">Priority High</option>
@@ -52,16 +52,19 @@
                     <th>#</th>
                     <th>Task Name</th>
                     <th>Priority</th>
+                    <th>Date</th>
+                    <th>Status</th>
                     <th>Action</th>
                 </tr>
             </thead>
 
             <tbody id="tasks">
-
+                
             </tbody>
 
         </table>
         
         <script src="main.js" async defer></script>
+        <script src="students.js" async defer></script>
     </body>
 </html>

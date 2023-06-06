@@ -76,6 +76,13 @@ select, .inputs select{
     border: none;
     font-size: 45px;
 }
+
+#tasks .check{
+    display: inline-block;
+    width: min-content;
+    
+}
+
 .inputs button:hover{
     color: orange;
 }
